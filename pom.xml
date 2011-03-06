@@ -39,4 +39,9 @@
         <maven.compiler.target>1.6</maven.compiler.target>
    </properties>
 
+    <scm>
+        <connection>scm:git:git://github.com/jenkinsci/scons-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:jenkinsci/scons-plugin.git</developerConnection>
+    </scm>
+
 </project>
