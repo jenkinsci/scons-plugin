@@ -2,17 +2,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.jvnet.hudson.plugins</groupId>
+        <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>1.355</version>
-        <relativePath>../pom.xml</relativePath>
+        <version>1.399</version>
     </parent>
 
+    <groupId>com.thalesgroup.jenkins-ci.plugins</groupId>
     <artifactId>scons</artifactId>
-    <version>0.2.2-SNAPSHOT</version>
+    <version>0.3-SNAPSHOT</version>
     <packaging>hpi</packaging>
-    <name>Hudson SCons plugin</name>
-    <url>http://wiki.hudson-ci.org/display/HUDSON/SCons+Plugin</url>
+    <name>Jenkins SCons plugin</name>
+    <url>http://wiki.jenkins-ci.org/display/JENKINS/SCons+Plugin</url>
 
     <licenses>
         <license>
@@ -33,23 +33,10 @@
         </developer>
     </developers>
 
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <artifactId>maven-resources-plugin</artifactId>
-                    <configuration>
-                        <encoding>UTF-8</encoding>
-                    </configuration>
-                </plugin>
+   <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+   </properties>
 
-                <plugin>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <configuration>
-                        <encoding>UTF-8</encoding>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
 </project>
