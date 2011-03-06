@@ -9,7 +9,7 @@
 
     <groupId>com.thalesgroup.jenkins-ci.plugins</groupId>
     <artifactId>scons</artifactId>
-    <version>0.3-SNAPSHOT</version>
+    <version>0.3</version>
     <packaging>hpi</packaging>
     <name>Jenkins SCons plugin</name>
     <url>http://wiki.jenkins-ci.org/display/JENKINS/SCons+Plugin</url>
