@@ -25,16 +25,15 @@ package com.thalesgroup.hudson.plugins.scons;
 
 import hudson.*;
 import hudson.model.EnvironmentSpecific;
+import hudson.model.Hudson;
 import hudson.model.Node;
 import hudson.model.TaskListener;
-import hudson.model.Hudson;
 import hudson.remoting.Callable;
 import hudson.slaves.NodeSpecific;
 import hudson.tools.ToolDescriptor;
 import hudson.tools.ToolInstallation;
 import hudson.tools.ToolProperty;
 import hudson.util.FormValidation;
-import org.jvnet.localizer.ResourceBundleHolder;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
 
@@ -90,7 +89,7 @@ public final class SConsInstallation extends ToolInstallation implements NodeSpe
 
         @Override
         public String getDisplayName() {
-            return ResourceBundleHolder.get(SConsBuilderScriptFile.class).format("DisplayName");
+            return Messages.DisplayName();
         }
 
         @Override
